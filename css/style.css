@@ -4,25 +4,31 @@
           box-sizing: border-box;
 }
 
-h1 {
-  font-family: 'Monoton', cursive;
-  font-size: 3rem;
-  margin: 0 auto;
+p {
+  margin-top: 1px;
 }
 
 body {
   color:grey;
   background-color: burlywood;
   display: flex;
+  text-align: center;
   align-content: center;
   flex-direction: column;
 }
 /* Pixel Board */
 .container {
-  width: 1200px;
+  width: 800px;
   margin: 0 auto;
   text-align: center;
 }
+
+.container h1{
+  font-family: 'Monoton', cursive;
+  font-size: 3rem;
+  margin: 0 auto;
+}
+
 #pixelboard {
     overflow: hidden;
     box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.5);
@@ -49,8 +55,6 @@ body {
 /* Color Pallette */
 .ColorContainer{
   text-align: center;
- 
-
 }
 #colorpalette{
   display: flex;
