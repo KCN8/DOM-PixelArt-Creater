@@ -11,8 +11,7 @@ h1 {
 }
 
 body {
-  color:black;
-  text-shadow: 1px 1px grey;
+  color:grey;
   background-color: burlywood;
   display: flex;
   align-content: center;
