@@ -1,8 +1,8 @@
-let backgroundColors = ["white","silver","gray","black","red","maroon","yellow","olive","lime","green","aqua","teal","blue","navy","fuchsia","purple"]
+let backgroundColors = ["White","Gray","Black","Red","Maroon","Green","Aqua","Teal","Blue","Navy","Fuchsia","Purple"]
 let brushColor = 'white'
 
 function createCanvas() {
-    for(i=0; i <= 1439; i++){
+    for(i=0; i <= 839; i++){
         let newSquare = document.createElement('div');
         let pixelBoard = document.getElementById('pixelboard');
         newSquare.setAttribute('class', 'border');
@@ -17,10 +17,13 @@ function createPalette(){
     for(i=0; i < backgroundColors.length; i++){
         let paletteSquare = document.createElement('div');
         let paletteSwatch = document.getElementById('colorpalette');
+        let CurrentColor = document.getElementsByTagName('h1')[1]
         paletteSquare.setAttribute('class', "palette-border");
         paletteSquare.style.backgroundColor = backgroundColors[i]
         paletteSquare.addEventListener('click', function(event){
             brushColor = paletteSquare.style.backgroundColor
+            CurrentColor.innerHTML = brushColor
+            CurrentColor.style.color = brushColor 
         });
         paletteSwatch.appendChild(paletteSquare)
     }
