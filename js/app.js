@@ -16,9 +16,9 @@ createCanvas();
 function createPalette(){
     for(i=0; i < backgroundColors.length; i++){
         let paletteSquare = document.createElement('div');
-        let paletteSwatch = document.getElementById('colorpalette');
+        let paletteSwatch = document.getElementById('colorPalette');
         let paintHere = document.getElementById("paintHere")
-        let CurrentColor = document.getElementsByTagName('h1')[1]
+        let CurrentColor = document.getElementById("colorHeader")
         paletteSquare.setAttribute('class', "palette-border");
         paletteSquare.style.backgroundColor = backgroundColors[i]
         paletteSquare.addEventListener('click', function(event){
