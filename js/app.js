@@ -17,6 +17,7 @@ function createPalette(){
     for(i=0; i < backgroundColors.length; i++){
         let paletteSquare = document.createElement('div');
         let paletteSwatch = document.getElementById('colorpalette');
+        let paintHere = document.getElementById("paintHere")
         let CurrentColor = document.getElementsByTagName('h1')[1]
         paletteSquare.setAttribute('class', "palette-border");
         paletteSquare.style.backgroundColor = backgroundColors[i]
@@ -24,6 +25,7 @@ function createPalette(){
             brushColor = paletteSquare.style.backgroundColor
             CurrentColor.innerHTML = brushColor
             CurrentColor.style.color = brushColor 
+            paintHere.style.color = brushColor
         });
         paletteSwatch.appendChild(paletteSquare)
     }

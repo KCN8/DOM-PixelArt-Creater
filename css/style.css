@@ -23,7 +23,7 @@ body {
   text-align: center;
 }
 
-.container h1{
+.container h1 {
   font-family: 'Monoton', cursive;
   font-size: 3rem;
   margin: 0 auto;
@@ -33,6 +33,7 @@ body {
     overflow: hidden;
     box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.5);
   }
+
 #pixelboard div {
     background-color: white;
     width: 20px;
@@ -53,10 +54,10 @@ body {
   border-radius: 50%;
 }
 /* Color Pallette */
-.ColorContainer{
+.ColorContainer { 
   text-align: center;
 }
-#colorpalette{
+#colorpalette {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
