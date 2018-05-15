@@ -54,10 +54,10 @@ body {
   border-radius: 50%;
 }
 /* Color Pallette */
-.ColorContainer { 
+.colorContainer { 
   text-align: center;
 }
-#colorpalette {
+.colorPalette {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
