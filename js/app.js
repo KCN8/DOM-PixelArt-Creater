@@ -1,5 +1,5 @@
 let backgroundColors = ["White","Gray","Black","Red","Maroon","Green","Aqua","Teal","Blue","Navy","Fuchsia","Purple"]
-let brushColor = 'white'
+let brushColor = 'White'
 
 function createCanvas() {
     for(i=0; i <= 839; i++){
